@@ -1103,3 +1103,32 @@ textarea {
 }
 
 /* =================== END Footer ================== */
+
+/* =================== START ONSCROLLINGF Animation ================== */
+
+.will-animate {
+  animation: onscroll 1.5s ease-out;
+  animation-fill-mode: both;
+  animation-play-state: paused;
+}
+
+.will-animate.animate {
+  animation-play-state: running;
+}
+
+.animated {
+  animation-name: none;
+}
+
+@keyframes onscroll {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =================== END ONSCROLLINGF Animation ================== */

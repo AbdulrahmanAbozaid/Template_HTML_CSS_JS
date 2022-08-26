@@ -335,3 +335,19 @@ onUpOption.forEach((option) => {
     e.target.classList.add("activate");
   });
 });
+
+/* ============================== OnScrolling Animation =========================== */
+
+const animes = _$(".will-animate");
+
+window.addEventListener("scroll", (e) => {
+  animes.forEach((anime) => {
+    if (window.scrollY > anime.closest("#section").offsetTop - 170) {
+      anime.classList.add("animate");
+      setTimeout(() => anime.classList.add("animated"), 1500);
+    } else {
+      anime.classList.remove("animate");
+      anime.classList.remove("animated");
+    }
+  });
+});
