@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Template</title>
+        <!-- ================= CSS ================= -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;800&family=Open+Sans:wght@300;400;700&family=PT+Sans:wght@400;700&family=Poppins:wght@400;500;600;700&family=Public+Sans:wght@300;400;500&family=Roboto:wght@400;500;700&family=Space+Mono:wght@400;700&family=Teko&family=Varela+Round&display=swap">
+        <link rel="stylesheet" href="assets/styles/normalise.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="assets/styles/main.css">
+    </head>
+    <body>
+        <!-- =========== SETTINGS BOX ========== -->
+        <div class="settings_box">
+            <div class="settings_box-toggle">
+                <i class="fas fa-cog settings_box-icon"></i>
+            </div>
+            <div class="settings_container">
+                <div class="settings__colors">
+                    <h2 class="colors_set">Colors</h2>
+                    <ul class="colors_list">
+                        <li class="color_list-item color_active" data-color="#b8c22cf9"></li>
+                        <li class="color_list-item" data-color="#ef5350"></li>
+                        <li class="color_list-item" data-color="#ab47bc"></li>
+                        <li class="color_list-item" data-color="#78909c"></li>
+                        <li class="color_list-item" data-color="#795548"></li>
+                    </ul>
+                </div>
+                <div class="settings__background">
+                    <h2 class="random_backs">Random Background</h2>
+                    <span class="backgroun__option random activate" data-perm="true">Yes</span>
+                    <span class="backgroun__option static" data-perm="false">No</span>
+                </div>
+                <div class="settings__aside-bullets">
+                    <h2 class="set_bullets-title">Nav Bullets</h2>
+                    <span class="bullets_option activate" data-display="block">Yes</span>
+                    <span class="bullets_option" data-display="none">No</span>
+                </div>
+                <div class="settings__header-onup">
+                    <h2 class="show__onup">Show Header On Scxrolling Up</h2>
+                    <span class="onup_option activate" data-onup="1">Yes</span>
+                    <span class="onup_option" data-onup="0">No</span>
+                </div>
+                <div class="settings__aside-reset">
+                    <span class="settings__reset">reset</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- =========== Aside Bullets ========== -->
+        <div class="aside_bullets"></div>
+
+        <!-- =========== LANDING PAGE ========== -->
+        <header class="hydra">
+            <div class="container header">
+                <h3 class="logo active" onclick='window.scrollTo({top: 0, behavior: "smooth"})'>Special Design</h3>
+                <nav class="navbar__links">
+                    <ul class="navbar">
+                        <li class="navbar_link">
+                            <a href="#" data-target="aboutus" class="active__nav-link active">About</a>
+                        </li>
+                        <li class="navbar_link">
+                            <a href="#" data-target="oursills">Skills</a>
+                        </li>
+                        <li class="navbar_link">
+                            <a href="#" data-target="gallery">Gallery</a>
+                        </li>
+                        <li class="navbar_link">
+                            <a href="#" data-target="timeline">Timeline</a>
+                        </li>
+                        <li class="navbar_link">
+                            <a href="#" data-target="featurs">Features</a>
+                        </li>
+                        <li class="navbar_link">
+                            <a href="#" data-target="testimonials">Testimonials</a>
+                        </li>
+                    </ul>
+                    <button class="toggle-menu" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+
+        </header>
+        <section id="section" data-title="Home" class="landing_page">
+            <div class="overlay"></div>
+            <!-- <div class="container">
+                                                                                                                                                                                                    <header class="header">
+                                                                                                                                                                                                        <h3 class="logo active">Special Design</h3>
+                                                                                                                                                                                                        <nav class="navbar__links">
+                                                                                                                                                                                                            <ul class="navbar">
+                                                                                                                                                                                                                <li class="navbar_link">
+                                                                                                                                                                                                                    <a href="#" data-target="aboutus" class="active__nav-link active">About</a>
+                                                                                                                                                                                                                </li>
+                                                                                                                                                                                                                <li class="navbar_link">
+                                                                                                                                                                                                                    <a href="#" data-target="oursills">Skills</a>
+                                                                                                                                                                                                                </li>
+                                                                                                                                                                                                                <li class="navbar_link">
+                                                                                                                                                                                                                    <a href="#" data-target="gallery">Gallery</a>
+                                                                                                                                                                                                                </li>
+                                                                                                                                                                                                                <li class="navbar_link">
+                                                                                                                                                                                                                    <a href="#" data-target="timeline">Timeline</a>
+                                                                                                                                                                                                                </li>
+                                                                                                                                                                                                                <li class="navbar_link">
+                                                                                                                                                                                                                    <a href="#" data-target="featurs">Features</a>
+                                                                                                                                                                                                                </li>
+                                                                                                                                                                                                                <li class="navbar_link">
+                                                                                                                                                                                                                    <a href="#" data-target="testimonials">Testimonials</a>
+                                                                                                                                                                                                                </li>
+                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                            <button class="toggle-menu" type="button">
+                                                                                                                                                                                                                <span></span>
+                                                                                                                                                                                                                <span></span>
+                                                                                                                                                                                                                <span></span>
+                                                                                                                                                                                                            </button>
+                                                                                                                                                                                                        </nav>
+                                                                                                                                                                                    
+                                                                                                                                                                                                    </header>
+                                                                                                                                                                                                </div> -->
+            <section class="landing_page-text center">
+                <h2>We Are
+                    <span class="active">Creative</span>
+                    Agency</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quam dolorum? Repellat aspernatur debitis earum.</p>
+            </section>
+        </section>
+
+        <!-- ======================= ABOUT US ======================= -->
+
+        <section id="section" data-title="About Us" class="aboutus">
+            <div class="container aboutus_content">
+                <div class="about__text">
+                    <h2>About Us</h2>
+                    <p class="about__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem magni rerum animi accusantium maxime eius, debitis id dolore earum maiores. Commodi odit sint aliquid mollitia.</p>
+                </div>
+                <div class="about__img">
+                    <img src="assets/images/aboutus.jpg" alt="illustrate">
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= OUR SKILLS ======================== -->
+
+        <section id="section" data-title="Our Skills" class="oursills">
+            <div class="container ourskills_content">
+                <h2 class="ourskills__title">Our Skills</h2>
+                <div class="skill__box">
+                    <h3 class="skill__name">HTML</h3>
+                    <div class="skill__progress">
+                        <span class="skill__bar" data-progress="80%"></span>
+                    </div>
+                </div>
+                <div class="skill__box">
+                    <h3 class="skill__name">CSS</h3>
+                    <div class="skill__progress">
+                        <span class="skill__bar" data-progress="70%"></span>
+                    </div>
+                </div>
+                <div class="skill__box">
+                    <h3 class="skill__name">JavaScript</h3>
+                    <div class="skill__progress">
+                        <span class="skill__bar" data-progress="65%"></span>
+                    </div>
+                </div>
+                <div class="skill__box">
+                    <h3 class="skill__name">Python</h3>
+                    <div class="skill__progress">
+                        <span class="skill__bar" data-progress="75%"></span>
+                    </div>
+                </div>
+                <div class="skill__box">
+                    <h3 class="skill__name">PHP</h3>
+                    <div class="skill__progress">
+                        <span class="skill__bar" data-progress="60%"></span>
+                    </div>
+                </div>
+                <div class="skill__box">
+                    <h3 class="skill__name">MySQL</h3>
+                    <div class="skill__progress">
+                        <span class="skill__bar" data-progress="75%"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= OUR GALLERY ======================== -->
+        <section id="section" data-title="Our Gallery" class="gallery">
+            <div class="container">
+                <h2 class="gallery__title">Our Gallery</h2>
+                <div class="gallery__imgs">
+                    <img src="assets/images/bg-1.jpg" alt="img" class="gallery__img">
+                    <img src="assets/images/bg-2.jpg" alt="img" class="gallery__img">
+                    <img src="assets/images/bg-3.jpg" alt="" class="gallery__img">
+                    <img src="assets/images/bg-4.jpg" alt="" class="gallery__img">
+                    <img src="assets/images/bg-5.jpg" alt="" class="gallery__img">
+                    <img src="assets/images/bg-6.jpg" alt="" class="gallery__img">
+                    <img src="assets/images/bg-7.jpg" alt="img" class="gallery__img">
+                    <img src="assets/images/bg-8.jpg" alt="img" class="gallery__img">
+                    <img src="assets/images/bg-9.jpg" alt="img" class="gallery__img">
+                    <img src="assets/images/bg-10.jpg" alt="img" class="gallery__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= TimeLine ======================== -->
+        <section id="section" data-title="Timeline" id="timeline" class="timeline">
+            <div class="container">
+                <div class="timeline_content">
+                    <div class="timeline__year">2021</div>
+                    <div class="line timeline__left">
+                        <div class="line_content">
+                            <h3 class="timeline__title">Testing Heading</h3>
+                            <p class="timeline__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quaerat debitis! Ipsam, eligendi consequatur ad perspiciatis laboriosam eos voluptate dignissimos harum adipisci, corporis ipsa nobis minima, alias fuga magnam accusamus.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="line timeline__right">
+                        <div class="line_content">
+                            <h3 class="timeline__title">Testing Heading</h3>
+                            <p class="timeline__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quaerat debitis! Ipsam, eligendi consequatur ad perspiciatis laboriosam eos voluptate dignissimos harum adipisci, corporis ipsa nobis minima, alias fuga magnam accusamus.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="timeline__year">2022</div>
+                    <div class="line timeline__left">
+                        <div class="line_content">
+                            <h3 class="timeline__title">Testing Heading</h3>
+                            <p class="timeline__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quaerat debitis! Ipsam, eligendi consequatur ad perspiciatis laboriosam eos voluptate dignissimos harum adipisci, corporis ipsa nobis minima, alias fuga magnam accusamus.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="line timeline__left">
+                        <div class="line_content">
+                            <h3 class="timeline__title">Testing Heading</h3>
+                            <p class="timeline__para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quaerat debitis! Ipsam, eligendi consequatur ad perspiciatis laboriosam eos voluptate dignissimos harum adipisci, corporis ipsa nobis minima, alias fuga magnam accusamus.</p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= Our Featurs ======================== -->
+        <section id="section" data-title="Features" class="featurs">
+            <h2 class="features__head">Our Featurs</h2>
+            <div class="container feat_boxes">
+                <div class="feat__box">
+                    <img src="assets/images/feats-01.png" alt="icon" class="feat__img">
+                    <h4 class="feat__title">Development</h4>
+                    <p class="feat__text">We Are Profesional Markteers, we will do anything you imagine in no time</p>
+                </div>
+                <div class="feat__box">
+                    <img src="assets/images/feats-02.png" alt="icon" class="feat__img">
+                    <h4 class="feat__title">Development</h4>
+                    <p class="feat__text">We Are Profesional Markteers, we will do anything you imagine in no time</p>
+                </div>
+                <div class="feat__box">
+                    <img src="assets/images/feats-03.png" alt="icon" class="feat__img">
+                    <h4 class="feat__title">Development</h4>
+                    <p class="feat__text">We Are Profesional Markteers, we will do anything you imagine in no time</p>
+                </div>
+                <div class="feat__box">
+                    <img src="assets/images/feats-04.png" alt="icon" class="feat__img">
+                    <h4 class="feat__title">Development</h4>
+                    <p class="feat__text">We Are Profesional Markteers, we will do anything you imagine in no time</p>
+                </div>
+                <div class="feat__box">
+                    <img src="assets/images/feats-05.png" alt="icon" class="feat__img">
+                    <h4 class="feat__title">Development</h4>
+                    <p class="feat__text">We Are Profesional Markteers, we will do anything you imagine in no time</p>
+                </div>
+                <div class="feat__box">
+                    <img src="assets/images/feats-06.png" alt="icon" class="feat__img">
+                    <h4 class="feat__title">Development</h4>
+                    <p class="feat__text">We Are Profesional Markteers, we will do anything you imagine in no time</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </section>
+
+        <!-- ======================= Our Featurs ======================== -->
+        <section id="section" data-title="Testimonials" class="testimonials">
+            <div class="container">
+                <h2 class="testi__head">Testimonials</h2>
+                <div class="testi__box">
+                    <p class="testi__box-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim sunt voluptatibus pariatur quas inventore. Necessitatibus?</p>
+                    <div class="testi__box-info person_info">
+                        <img src="https://via.placeholder.com/80/DDD" alt="" class="person_img">
+                        <h4 class="person_name">Ahmed Mosaad</h4>
+                        <p class="person_company">CEO At Company</p>
+                    </div>
+                </div>
+                <div class="testi__box">
+                    <p class="testi__box-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim sunt voluptatibus pariatur quas inventore. Necessitatibus?</p>
+                    <div class="testi__box-info person_info">
+                        <img src="https://via.placeholder.com/80/DDD" alt="" class="person_img">
+                        <h4 class="person_name">Ahmed Mosaad</h4>
+                        <p class="person_company">CEO At Company</p>
+                    </div>
+                </div>
+                <div class="testi__box">
+                    <p class="testi__box-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim sunt voluptatibus pariatur quas inventore. Necessitatibus?</p>
+                    <div class="testi__box-info person_info">
+                        <img src="https://via.placeholder.com/80/DDD" alt="" class="person_img">
+                        <h4 class="person_name">Ahmed Mosaad</h4>
+                        <p class="person_company">CEO At Company</p>
+                    </div>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </section>
+
+        <!-- ======================= Our Featurs ======================== -->
+        <section id="section" class="contactus" data-title="Contact Us">
+            <div class="contact_overlay"></div>
+            <div class="container">
+                <h2 class="contact__title">Contact Us</h2>
+                <form class="contact__from">
+                    <div class="form_left">
+                        <input type="text" placeholder="Your Name" name="username">
+                        <input type="tel" pattern="+[1-9]{3}-[1-9]{3}-[1-9]{3}" placeholder="Your Phone" name="phone">
+                        <input type="email" placeholder="Your Email" name="email">
+                        <input type="text" placeholder="Subject" name="subject">
+                    </div>
+                    <div class="form_right">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send">
+                    </div>
+                    <div class="clearfix"></div>
+                </form>
+            </div>
+        </section>
+
+        <!-- ======================= Our Featurs ======================== -->
+        <footer class="footer">
+            Created With Love&heartsuit; By Abdulrahamn
+        </footer>
+
+        <!-- ================== JS ==================== -->
+        <script src="assets/scripts/main.js"></script>
+    </body>
+</html>
