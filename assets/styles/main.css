@@ -1107,17 +1107,13 @@ textarea {
 /* =================== START ONSCROLLINGF Animation ================== */
 
 .will-animate {
-  animation: onscroll 1.5s ease-out;
+  animation: onscroll 1s ease-out;
   animation-fill-mode: both;
   animation-play-state: paused;
 }
 
 .will-animate.animate {
   animation-play-state: running;
-}
-
-.animated {
-  animation-name: none;
 }
 
 @keyframes onscroll {
